@@ -47,7 +47,8 @@
         <li><a href="index.html#elementos-interactivos">Elementos Interactivos</a></li>
         <li><a href="index.html#audio-video">Audio y Video</a></li>
         <li><a href="index.html#iframes">iFrames</a></li>
-        <li><a href="index.html#"></a></li>
+        <li><a href="index.html#formularios">Formularios</a></li>
+        <li><a href="index.html#dataAttributes">Data Attributes</a></li>
         <li><a href="index.html#"></a></li>
     </ul>
     <hr>
@@ -372,6 +373,142 @@
     <br>
     <a href="index.html#inicio">🔼</a>
     <hr>
+    <h2 id="formularios">Formularios</h2>
+    <h3>Eelementos de formularios</h3>
+    <input type="text">
+    <br>
+    <input type="checkbox">
+    <br>
+    <input type="radio">
+    <br>
+    <input type="date">
+    <br>
+    <input type="color">
+    <br>
+    <input type="button" value="Boton">
+    <br>
+    <input type="submit">
+    <br>
+    <input type="reset">
+    <br>
+    <input type="text">
+    <br>
+    <input type="file">
+    <br>
+    <input type="file" multiple>
+    <br>
+    <input type="hidden" name="idioma" value="es">
+    <br>
+    <input type="email">
+    <br>
+    <input type="number">
+    <br>
+    <input type="tel">
+    <br>
+    <input type="password">
+    <br>
+    <input type="search">
+    <br>
+    <input type="text" value="Jorge" readonly disabled>
+    <br>
+    <input type="text" placeholder="Escribe tu nombre">
+    <br>
+    <textarea cols="70" rows="5"></textarea>
+    <br>
+    <select name="" id="">
+        <option value="">HTML</option>
+        <option value="">CSS</option>
+        <option value="">JavaScript</option>
+    </select>
+    <br>
+    <br>
+    <select name="" id="" multiple>
+        <option value="">HTML</option>
+        <option value="">CSS</option>
+        <option value="">JavaScript</option>
+    </select>
+    <br>
+    <br>
+    <h3>Ejemplo de formularios</h3>
+    <h4>Formulario de login</h4>
+    <!-- https://ghostdevx.netlify.app/?usuario=asdasd&password=asdasd -->
+    <form action="https://ghostdevx.netlify.app/" method="post" autocomplete="off">
+        <label for="usuario">Usuario:</label>
+        <input type="text" name="usuario" id="usuario" placeholder="Escribe tu usuario" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Escribe tu password" required
+            pattern="^[A-Za-z]+$" title="El campo solo acepta letras">
+        <br>
+        <input type="submit">
+        <br>
+        <input type="reset">
+    </form>
+    <br>
+    <h4>Select, Radios y Checkbox</h4>
+    <form>
+        <p>Elige tu idioma:</p>
+        <select name="idioma" multiple required>
+            <option value="" selected>Elige una opcion</option>
+            <option value="es">Español</option>
+            <option value="en">Ingles</option>
+            <option value="fr">Frances</option>
+        </select>
+        <p>Elige tu lenguaje de programacion favorito:</p>
+        <input type="radio" name="lenguaje" id="radio-js" value="js" checked>
+        <label for="radio-js">Javascript</label>
+        <input type="radio" name="lenguaje" id="radio-python" value="py">
+        <label for="radio-python">Python</label>
+        <input type="radio" name="lenguaje" id="radio-c#" value="c#">
+        <label for="radio-c#">C#</label>
+        <br>
+        <p>Elige tus intereses</p>
+        <label><input type="checkbox" name="interes" value="videojuegos">Videojuegos</label>
+        <label><input type="checkbox" name="interes" value="tecnologia">Tecnologia</label>
+        <label><input type="checkbox" name="interes" value="arte">Arte</label>
+        <br>
+        <p><label> <input type="checkbox" name="terminos" required>¿Aceptas terminos y condiciones?</label></p>
+        <br>
+        <br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <br>
+    <!-- <form action="https://formsubmit.co/ghxst023@gmail.com" method="POST"> -->
+    <h4>Formulario de contacto</h4>
+    <form action="https://formsubmit.co/1e443061be5628861adaa42e3df73c0b" method="POST"></form>
+    <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+        title="Nombre solo acepta letras y espacios en blanco" required>
+    <br>
+    <input type="email" name="email" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+        title="Escribe un correo electronico valido" required>
+    <br>
+    <textarea name="comentarios" cols="30" rows="10" required></textarea>
+    <br>
+    <input type="submit">
+    <input type="reset">
+    </form>
+    <br>
+    <br>
+    <a href="index.html#inicio">🔼</a>
+    <hr>
+    <h2 id="dataAttributes">Data Attributes</h2>
+    <ul>
+        <li data-id="1" data-name="spring">Primavera</li>
+        <li data-id="2" data-name="summer">Verano</li>
+        <li data-id="3" data-name="autumn">Otoño</li>
+        <li data-id="4" data-name="winter">Invierno</li>
+    </ul>
+    <br>
+    <a href="index.html#inicio">🔼</a>
 </body>
 
 </html>
+
+
+<!-- <ol>
+    <li><a href="#">Primavera</a></li>
+    <li>Verano</li>
+    <li>Otoño</li>
+    <li>Invierno</li>
+</ol> -->
