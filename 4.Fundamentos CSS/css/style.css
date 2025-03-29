@@ -1,0 +1,21 @@
+/*! Regla CSS consta de 2 partes: 
+1). El selector
+2). El bloque de declaraciones {
+sintaxis -> atributo:valor;
+atributo-de-mas-dos-palabras:otro-valor;
+} */
+
+/*! Llamar una hoja de estilos dentro de otra usar el @import es mala practica por que son bloqueantes a la hora de que el navegador lee esta instruccion solo en CSS PURO*/
+/* @import url(./otra-hoja.css); */
+
+h1 {
+  color: orangered;
+  background-color: black;
+}
+
+/*! Selectores Basicos
+
+1). Etiquetas: son elementos HTML
+2). Identificadores: atributo id - #
+3). Clases: atributo class - .
+*/
