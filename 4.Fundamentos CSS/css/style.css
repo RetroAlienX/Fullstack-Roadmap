@@ -8,6 +8,10 @@ atributo-de-mas-dos-palabras:otro-valor;
 /*! Llamar una hoja de estilos dentro de otra usar el @import es mala practica por que son bloqueantes a la hora de que el navegador lee esta instruccion solo en CSS PURO*/
 /* @import url(./otra-hoja.css); */
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   color: orangered;
   background-color: black;
