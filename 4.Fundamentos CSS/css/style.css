@@ -13,9 +13,44 @@ h1 {
   background-color: black;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*! Selectores Basicos
 
 1). Etiquetas: son elementos HTML
 2). Identificadores: atributo id - #
 3). Clases: atributo class - .
 */
+
+/* Selector de etiqueta */
+p {
+  color: midnightblue;
+}
+
+/* Selector por ID se considera un antipatron, mala practica*/
+#parrafo-dos {
+  background-color: skyblue;
+}
+
+/* Selector por clase permite reutilizar nuestro codigo CSS*/
+.text-20 {
+  font-size: 20px;
+}
+
+.text-32 {
+  font-size: 32px;
+}
+
+.bg-skyblue {
+  background-color: skyblue;
+}
+
+.bg-steelblue {
+  background-color: steelblue;
+}
+
+.text-white {
+  color: white;
+}
