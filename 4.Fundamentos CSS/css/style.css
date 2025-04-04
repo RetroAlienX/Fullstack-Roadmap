@@ -58,3 +58,73 @@ p {
 .text-white {
   color: white;
 }
+
+/* ! Selectores avanzados*/
+
+/* Hijos directos aplica a todos los elementos*/
+.hijos-directos > li {
+  background-color: thistle;
+}
+
+/* Hijos descendientes se deja un espacio para saltar lo que no se necesita y llegar solo a b que esta dentro de li es decir el hijo descendiente*/
+.hijos-descendientes b {
+  background-color: thistle;
+}
+
+/* Hermanos general los selectores de hermanos van a aplicar a los elementos que son hermanos y que esten por debajo del elemento de referencia*/
+.hermanos-general ~ li {
+  background-color: thistle;
+}
+
+/* Hermanos adyacentes */
+.hermanos-adyacentes + li {
+  background-color: thistle;
+}
+
+/* Selectores de atributos */
+.selectores-atributos a[href] {
+  color: orangered;
+}
+
+.selectores-atributos a[target="_blank"] {
+  font-weight: bold;
+}
+
+/* El comodin del asterisco * aplica el estilo si contiene la palabra en cuestion */
+.selectores-atributos a[href*="google"] {
+  font-size: 24px;
+}
+
+/* El comodin del circunflejo ^ aplica el estilo si contiene e inicia la palabra en cuestion */
+.selectores-atributos a[href^="http://"]
+{
+  background-color: chartreuse;
+}
+
+/* El comodin del signo de dinero $ aplica el estilo si contiene al final la palabra en cuestion */
+.selectores-atributos a[href$="css"] {
+  background-color: black;
+  color: red;
+}
+
+/* El comodin del signo de tilde ~ aplica el estilo si contiene el texto en cuestion en una lista separada por espacios  */
+.selectores-atributos a[class~="cursos"] {
+  background-color: red;
+  color: black;
+}
+
+/* El comodin del signo de pipe | aplica el estilo si contiene el texto en cuestion en una lista separada por espacios y que despues del texto en cuestion pueda venir un guion medio - */
+.selectores-atributos a[class|="menu"] {
+  background-color: blue;
+  color: white;
+}
+
+/* Selector Universal (*) */
+
+* {
+  font-family: sans-serif;
+}
+
+.selector-universal * {
+  font-size: 24px;
+}
